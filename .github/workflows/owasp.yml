@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: SSH and deploy app
+    - name: OWASP ZAP Fullscan
       uses: zaproxy/action-full-scan@v0.3.0
       with:
-        target: '0.0.0.0:5000'
+        target: 'https://www.weak-snake-93.a276.dcdg.xyz/'
